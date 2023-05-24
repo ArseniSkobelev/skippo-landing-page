@@ -3,6 +3,7 @@
 
     import Header from "../components/Header.svelte";
     import Hero from "../components/Hero.svelte";
+    import About from "../components/About.svelte";
 </script>
 
 <svelte:head>
@@ -26,12 +27,12 @@
                 </defs>
             </svg>
         </div>
-        <div class="block md:hidden absolute top-0 right-0 z-0">
-            <svg width="646" height="360" viewBox="0 0 646 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0V285.155C0 285.155 92.8625 292.871 264.052 345.91C435.242 398.95 646 285.155 646 285.155V0H0Z"
-                      fill="url(#paint0_linear_10_10)"/>
+        <div class="block md:hidden absolute top-0 right-0 z-0 w-full">
+            <svg width="100%" height="100" viewBox="0 0 393 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M446 -14V89.3163C446 89.3163 293.936 111 196.5 111C99.0642 111 -53 89.3163 -53 89.3163V-14H446Z"
+                      fill="url(#paint0_linear_14_20)"/>
                 <defs>
-                    <linearGradient id="paint0_linear_10_10" x1="66.2402" y1="304.277" x2="263.554" y2="-90.4019"
+                    <linearGradient id="paint0_linear_14_20" x1="-1.83302" y1="91.6519" x2="34.8104" y2="-71.4063"
                                     gradientUnits="userSpaceOnUse">
                         <stop stop-color="#6245F3"/>
                         <stop offset="1" stop-color="#917EF0"/>
@@ -41,6 +42,7 @@
         </div>
         <Header/>
         <Hero/>
+        <About/>
         <!--  content  -->
         <div class="z-10">
             <slot/>

@@ -33,12 +33,30 @@
 
 @keyframes appearFromRight {
     0% {
-        transform: scale(.8);
+        transform: translateX(300px);
         opacity: 0;
     }
     100% {
-        transform: scale(1);
+        transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -51,5 +69,17 @@
 }
 
 .animate_appear_from_right {
-    animation: 1s ease-out 0s 1 appearFromRight;
+    animation: 1s ease-in-out 0s 1 appearFromRight;
+}
+
+#animate_container {
+    overflow: hidden;
+}
+
+.animate-appear {
+    animation: 1s ease-out 0s 1 appear;
+}
+
+.animate-appear-reverse {
+    animation: 1s ease-in-out 0s 1 disappear;
 }
