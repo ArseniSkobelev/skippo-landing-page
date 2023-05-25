@@ -20,7 +20,7 @@
     <div class="flex flex-row items-center justify-between md:w-full">
         <div>
             <a href="/">
-                <h2 class="md:bg-gradient-to-r text-4xl from-skippo_purple to-skippo_purple_lighter md:text-transparent md:bg-clip-text font-semibold text-white">
+                <h2 class="lg:bg-gradient-to-r text-4xl from-skippo_purple to-skippo_purple_lighter lg:text-transparent lg:bg-clip-text font-semibold text-white">
                     skippo.
                 </h2>
             </a>

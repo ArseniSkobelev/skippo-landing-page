@@ -15,8 +15,18 @@
                 step is to achieve <a href="https://github.com/firefly-iii/firefly-iii" class="text-skippo_purple">Firefly
                 III</a> integration to manage personal
                 finances. The bot also
-                features a builtin <strong>NLP model</strong> to ensure natural bidirectional communication
+                features a builtin <strong>NLP model</strong> to ensure natural bidirectional communication. <br>The
+                main features and integrations are as following:
             </p>
+            <ul class="list-disc pl-4">
+                <li><strong>Kubernetes API</strong> integration</li>
+                <li><strong>NLP chat model</strong> for simple bidirectional communication <i>(under construction 🔨)</i>
+                </li>
+                <li><strong>Firefly III</strong> integration <i>(under construction 🔨)</i></li>
+                <li><strong>Mood tracking</strong> system <i>(under construction 🔨)</i></li>
+                <li><strong>Reminder system </strong> <i>(under construction 🔨)</i></li>
+                <li><strong>Customizable bot avatar</strong> <i>(under construction 🔨)</i></li>
+            </ul>
         </div>
     </div>
     <div class="flex flex-col gap-4">

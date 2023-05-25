@@ -15,6 +15,9 @@ export default {
                 '2xl': '24px',
                 '3xl': '28px',
                 '4xl': '32px'
+            },
+            screens: {
+                lg: '900px'
             }
         },
     },
