@@ -4,7 +4,7 @@
     let helper = new Helper();
 </script>
 
-<div class="flex flex-col md:justify-between md:flex-row z-10 overflow-clip mt-8 md:mt-0">
+<div class="flex flex-col md:justify-between md:flex-row z-10 overflow-x-visible mt-8 md:mt-0">
     <div class="animate_appear_from_left flex flex-col gap-8 md:block">
         <p class="text-3xl md:text-4xl md:mt-16 md:w-1/2">
             <span><i>Skippo,</i></span> the <span class="text-skippo_purple"><i>techyfied*</i></span> personal chat
