@@ -25,7 +25,7 @@
                 </h2>
             </a>
         </div>
-        <div class={`hidden md:flex md:flex-row md:gap-16 flex-col py-4 md:p-0 text-center w-full md:w-auto text-white mt-4 md:mt-0 font-medium md:font-normal`}>
+        <div class={`hidden md:flex md:flex-row md:gap-16 flex-col text-lg py-4 md:p-0 text-center w-full md:w-auto text-white mt-4 md:mt-0 font-medium md:font-normal`}>
             <a href="" class="p-4 lg:p-0 md:hover:text-gray-800 transition-all">Home</a>
             <a href="" data-target="#about" on:click|preventDefault={helper.smoothScroll}
                class="p-4 lg:p-0 md:hover:text-gray-800 transition-all">About</a>
