@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="flex flex-col h-full w-full md:items-center px-8 items-center">
-    <div class="flex flex-col md:w-full max-w-[600px] md:max-w-[1100px] 3xl:max-w-[1600px] 4xl:max-w-[2100px] gap-4">
+    <div class="flex flex-col md:w-full max-w-[600px] md:max-w-[1100px] 3xl:max-w-[1600px] 4xl:max-w-[2100px] 5xl:max-w-[2700px] gap-4">
         <div class="hidden md:block absolute top-0 right-0 z-0">
             <svg width="762" height="431" viewBox="0 0 762 431" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M539.557 417.527C353.839 366.196 242.665 160.326 88.9784 111.249C36.3975 94.458 10.4113 52.6829 0.618804 -0.238729L762.208 0.0335377L762.347 388.79C706.959 428.682 633.599 443.519 539.557 417.527Z"

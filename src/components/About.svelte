@@ -1,62 +1,48 @@
-<div class="flex flex-col gap-16 mt-24 w-full" id="about">
-    <div class="flex flex-col justify-center">
-        <div class="flex justify-center">
+<div class="flex flex-col gap-16 pt-24 w-full" id="about">
+    <div class="flex flex-col justify-center 3xl:items-center">
+        <div class="flex justify-center mb-8">
             <h2 class="text-2xl">Features</h2>
         </div>
-        <div class="flex md:flex-row flex-col justify-around py-16 gap-16">
-            <div class="flex flex-col gap-16 row">
-                <div class="container">
-                    <div class="w-1/5 flex items-center">
-                        <img src="/img/logos/kubernetes.svg" alt="Kubernetes Logo">
-                    </div>
-                    <div class="flex flex-col gap-2 w-4/5">
-                        <h2 class="text-xl">Kubernetes integration</h2>
-                        <p>The bot allows for simple and natural integration with the <strong>Kubernetes API</strong>.
-                            You
-                            are able to interact with resources and create bigger deployments in a simple manner of a
-                            dialogue.</p>
-                    </div>
+        <div class="md:grid md:grid-cols-2 flex flex-col gap-8 3xl:gap-16 3xl:max-w-[1200px] 3xl:place-items-center 3xl:place-content-center 3xl:w-full">
+            <div class="flex flex-col gap-4 items-center text-center">
+                <div class="flex items-center">
+                    <img src="/img/logos/kubernetes.svg" alt="Kubernetes Logo" class="w-24 h-24">
                 </div>
-                <div class="container">
-                    <div class="w-1/5 flex items-center">
-                        <img src="/img/logos/firefly-iii.svg" alt="Firefly III Logo">
-                    </div>
-                    <div class="flex flex-col gap-2 w-4/5">
-                        <h2 class="text-xl">Firefly III functionality</h2>
-                        <p>One of the features that we wanted to implement was an integration with <strong><a
-                                href="https://github.com/firefly-iii/firefly-iii" class="text-skippo_purple">Firefly
-                            III</a></strong>. Firefly III is a budgeting software that allows you to track your
-                            spending's with a simple yet powerful web interface. We made the interface accessible with
-                            our <strong>NLP chat model</strong>.</p>
-                    </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl">Kubernetes integration</h2>
+                    <p class="">The bot allows for simple and natural integration with the <strong>Kubernetes
+                        API</strong>.
+                        You
+                        are able to interact with resources and create bigger deployments in a simple manner of a
+                        dialogue.</p>
                 </div>
             </div>
-            <div class="flex flex-col gap-16 row">
-                <div class="container">
-                    <div class="w-1/5 flex items-center">
-                        <img src="/img/logos/nlp.svg" alt="NLP Logo">
-                    </div>
-                    <div class="flex flex-col gap-2 w-4/5">
-                        <h2 class="text-xl">NLP chat model</h2>
-                        <p>Our bot is powered by a <i>self-hosted</i> and <i>self-built</i> NLP <i>(Natural Language
-                            Processing)</i> chat model. Natural Language Processing is a branch of <i>AI</i> that
-                            focuses
-                            on
-                            giving a computer the ability to understand text or spoken words in a natural <i>(human
-                                natural)</i> way.</p>
-                    </div>
+            <div class="flex flex-col gap-4 items-center text-center">
+                <div class="flex items-center">
+                    <img src="/img/logos/firefly-iii.svg" alt="Firefly III Logo" class="w-24 h-24">
                 </div>
-                <div class="container">
-                    <div class="w-1/5 flex items-center">
-                        <img src="/img/logos/kubernetes.svg" alt="Kubernetes Logo">
-                    </div>
-                    <div class="flex flex-col gap-2 w-4/5">
-                        <h2 class="text-xl">Kubernetes integration</h2>
-                        <p>The bot allows for simple and natural integration with the <strong>Kubernetes API</strong>.
-                            You
-                            are able to interact with resources and create bigger deployments in a simple manner of a
-                            dialogue</p>
-                    </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl">Firefly III functionality</h2>
+                    <p class="">One of the features that we wanted to implement was an integration with
+                        <strong><a
+                                href="https://github.com/firefly-iii/firefly-iii" class="text-skippo_purple">Firefly
+                            III</a></strong>. Firefly III is a budgeting software that allows you to track your
+                        spending's with a simple yet powerful web interface. We made the interface accessible with
+                        our <strong>NLP chat model</strong>.</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 items-center text-center">
+                <div class="flex items-center">
+                    <img src="/img/logos/nlp.svg" alt="NLP Logo" class="w-24 h-24">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-xl">NLP chat model</h2>
+                    <p class="">Our bot is powered by a <i>self-built</i> NLP <i>(Natural
+                        Language
+                        Processing)</i> chat model. NLP is a branch of <i>AI</i> that
+                        focuses
+                        on
+                        giving a computer the ability to understand text or spoken words.</p>
                 </div>
             </div>
         </div>

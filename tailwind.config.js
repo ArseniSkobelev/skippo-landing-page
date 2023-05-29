@@ -19,7 +19,8 @@ export default {
             screens: {
                 lg: '900px',
                 '3xl': '1920px',
-                '4xl': '2400px'
+                '4xl': '2400px',
+                '5xl': '2900px'
             }
         },
     },
