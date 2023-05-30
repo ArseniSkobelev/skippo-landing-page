@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: landing-page
+  annotations:
+    metallb.universe.tf/loadBalancerIPs: 10.5.0.10
+spec:
+  ports:
+    - port: 3000
+      targetPort: 3000
+  selector:
+    app: landing-page
+  type: LoadBalancer
+  externalTrafficPolicy: Cluster
