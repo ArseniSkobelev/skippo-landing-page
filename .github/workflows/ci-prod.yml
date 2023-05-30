@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build_image_update_manifest:
+  build_image:
     name: Build image -> Update manifest
     runs-on: ubuntu-latest
     
@@ -31,18 +31,22 @@ jobs:
           BUILD_TAG: ${{ github.sha }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-      - name: Clone manifest repo
-        uses: actions/checkout@v2
+  update-manifest:
+    runs-on: ubuntu-latest
+    needs: [ 'build_image' ]
+    steps:
+      - uses: actions/checkout@v3
         with:
           repository: ArseniSkobelev/skippo-infra
-      - name: Update manifest file
-        run: sed -i "s/:.*$/:${BUILD_TAG}/" deployment.yaml
-      - name: GIT commit and push all changed files
-        env: 
-          CI_COMMIT_MESSAGE: CI
-          CI_COMMIT_AUTHOR: skippo. CI
-        run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "username@users.noreply.github.com"
-          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          ref: 'master'
+          token: ${{ secrets.G_TOKEN }}
+      - name: setup git config
+        run: /
+          git config --global user.email "arseni.skobelev0@gmail.com"
+          git config --global user.name "arseniskobelev"
+          echo ${{ github.sha }}
+          sed -i "ArseniSkoblev/skippo-landing-page:${{ github.sha }}#g" deployment.yaml
+          git add -A
+          git commit -m "Updated image for - ${{ github.sha }}"
+      - run: echo ${{ github }}
+      - run: git push origin master
