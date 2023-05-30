@@ -24,8 +24,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          tags: /
-            arseniskobelev/skippo-landing-page:${{ github.sha }}
+          tags: arseniskobelev/skippo-landing-page:${{ github.sha }}
           push: ${{ github.ref == 'refs/heads/master' }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
