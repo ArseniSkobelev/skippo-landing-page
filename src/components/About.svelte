@@ -5,7 +5,7 @@
 <div class="flex flex-col gap-16 pt-24 w-full" id="about">
     <div class="flex flex-col justify-center 3xl:items-center">
         <div class="flex justify-center mb-8">
-            <h2 class="text-2xl">Features (test)</h2>
+            <h2 class="text-2xl">Features</h2>
         </div>
         <div class="grid md:grid-cols-2 3xl:grid-cols-3 grid-cols-1 gap-8 3xl:gap-24 3xl:max-w-[1400px] 3xl:place-items-center 3xl:place-content-center 3xl:w-full">
             <FeaturePreview image="/img/logos/kubernetes.svg"
