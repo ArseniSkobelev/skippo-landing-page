@@ -6,7 +6,8 @@ export default {
             colors: {
                 'skippo_purple': '#6245F3',
                 'skippo_purple_lighter': '#917EF0',
-                'skippo_purple_darker': '#4026C0'
+                'skippo_purple_darker': '#4026C0',
+                'link_blue': '#3366CC'
             },
             fontSize: {
                 sm: '12px',
