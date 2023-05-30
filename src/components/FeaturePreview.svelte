@@ -2,7 +2,6 @@
     export let title: string = "A feature";
     export let image: string = "/img/logos/kubernetes.svg"
     export let imageAlt: string = "Kubernetes logo"
-    export let description: string = "This is a new feature description."
 </script>
 
 <div class="flex flex-col gap-4 items-center text-center">
