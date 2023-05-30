@@ -39,8 +39,8 @@ jobs:
         run: sed -i "s/:.*$/:${BUILD_TAG}/" deployment.yaml
       - name: Commit and push changes
         run: |
-          git config user.name "Arseni Skobelev"
+          git config user.name "ArseniSkobelev"
           git config user.email "arseni.skobelev0@gmail.com"
           git add .
           git commit -m "Update manifest with build tag"
-          git push
+          git push origin master
