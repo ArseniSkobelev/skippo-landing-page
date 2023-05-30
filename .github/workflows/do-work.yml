@@ -25,26 +25,7 @@ jobs:
         with:
           context: ./
           tags: /
-            areyoubusy/skippo-landing-page:${{ github.sha }}
-          push: ${{ github.ref == 'refs/heads/development' }}
+            arseniskobelev/skippo-landing-page:${{ github.sha }}
+          push: ${{ github.ref == 'refs/heads/master' }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-  update-manifest:
-    runs-on: ubuntu-latest
-    needs: [ 'build-and-push-docker-image' ]
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          repository: ArseniSkobelev/skippo-landing-page
-          ref: 'development'
-          token: ${{ secrets.G_TOKEN }}
-      - name: setup git config
-        run: /
-          git config --global user.email "arseniskobelev0@gmail.com"
-          git config --global user.name "arseniskobelev"
-          echo ${{ github.sha }}
-          sed -i "ArseniSkoblev/skippo-landing-page:${{ github.sha }}#g" deployment.yaml
-          git add -A
-          git commit -m "Updated image for - ${{ github.sha }}"
-      - run: echo ${{ github }}
-      - run: git push origin development
