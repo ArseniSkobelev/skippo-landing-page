@@ -23,7 +23,7 @@ jobs:
       - name: Push push push
         uses: docker/build-push-action@v2
         with:
-          context: ./
+          context: .
           tags: arseniskobelev/skippo-landing-page:${{ github.sha }}
           push: ${{ github.ref == 'refs/heads/master' }}
       - name: Image digest
