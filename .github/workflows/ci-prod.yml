@@ -43,4 +43,8 @@ jobs:
           git config user.email "arseni.skobelev0@gmail.com"
           git add .
           git commit -m "Update manifest with build tag"
-          git push origin master
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.G_TOKEN }}
+          branch: master
