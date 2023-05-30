@@ -36,12 +36,7 @@ jobs:
         with:
           repository: arseniskobelev/skippo-infra
       - name: Update manifest file
-        run: |
-          # Install yq
-          sudo pip3 install yq
-
-          # Update the manifest file with the new build tag
-          yq eval ".spec.template.spec.containers[0].image |= sub(\":.*\", \":${BUILD_TAG}\")" deployment.yaml
+        run: sed -i "s/:.*$/:${BUILD_TAG}/" deployment.yaml
       - name: Commit and push changes
         run: |
           git config user.name "Arseni Skobelev"
