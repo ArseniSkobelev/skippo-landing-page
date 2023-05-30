@@ -15,7 +15,8 @@
                 *a word defining something that is enhanced or modified with technological features or characteristics
             </p>
             <a>
-                <button class="md:mt-8 p-4 w-full md:w-auto bg-black text-white text-center" data-target="#about"
+                <button class="md:mt-8 px-4 py-2 w-full md:w-auto bg-skippo_purple rounded text-white text-center"
+                        data-target="#about"
                         on:click|preventDefault={helper.smoothScroll}>
                     FIND OUT MORE
                 </button>
