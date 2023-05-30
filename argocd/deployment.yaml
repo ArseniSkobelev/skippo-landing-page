@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: areyoubusy/skippo-landing-page:latest
+          image: arseniskobelev/skippo-landing-page:latest
           ports:
             - containerPort: 3000
