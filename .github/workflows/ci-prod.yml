@@ -44,7 +44,7 @@ jobs:
         run: |
           git config --global user.email "arseni.skobelev0@gmail.com"
           git config --global user.name "arseniskobelev"
-          new_image="arseniskobelev/skippo-landing-page:${BUILD_TAG}"
+          new_image="arseniskobelev/skippo-landing-page:${{ github.sha }}"
           deployment_file="deployment.yaml"
           old_image=$(grep -oP "(?<=image: ).+" $deployment_file)
           sed -i "s|$old_image|$new_image|g" $deployment_file
