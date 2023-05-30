@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: landing-page
   annotations:
-    metallb.universe.tf/address-pool: default
+    metallb.universe.tf/loadBalancerIPs: 10.5.0.10
 spec:
   ports:
     - port: 3000
